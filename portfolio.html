@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Mirrored from bostamihtml.ibthemespro.com/portfiloTwo.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jun 2023 12:52:02 GMT -->
+  <head>
+    <!-- common meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo/ferdinand.png" type="image/x-icon" />
+
+    <!--=== fontaswesome ===-->
+    <link rel="stylesheet" href="assets/fontaswesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/fontaswesome/css/fontawesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <!--=== owl carousel css === -->
+    <link rel="stylesheet" href="css/vendor/jquery.modal.min.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <title>Portfolio - Ferdinand Tambunan</title>
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+      <div class="loader_line"></div>
+    </div>
+    <!-- /PRELOADER -->
+
+    <div class="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+      <div class="z-50">
+        <!-- container start -->
+        <div class="container">
+          <!-- header start for large screens -->
+          <header class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
+            <div class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black">
+              <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
+                <!-- website logo -->
+                <a class="text-5xl font-semibold" href="index.html">
+                  <img class="h-20" src="images/logo/logo3.png" alt="logo" />
+                </a>
+                <div class="flex items-center">
+                  <!-- light and dark mode button -->
+                  <button id="theme-toggle-mobile" type="button" class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">
+                    <i id="theme-toggle-dark-icon-mobile" class="fa-solid text-xl fa-moon hidden"></i>
+                    <i id="theme-toggle-light-icon-mobile" class="fa-solid fa-sun text-xl hidden"></i>
+                  </button>
+                  <!-- mobile toggle button -->
+                  <button id="menu-toggle" type="button" class="menu-toggle-btn">
+                    <i id="menu-toggle-open-icon" class="fa-solid fa-bars text-xl"></i>
+                    <i id="menu-toggle-close-icon" class="fa-solid fa-xmark text-xl hidden"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- header items two for large screens -->
+            <nav class="hidden lg:block">
+              <ul class="flex my-12">
+                <li>
+                  <a class="menu-item-two" href="homePage.html">
+                    <span class="mr-2 text-base">
+                      <i class="fa-solid fa-house"></i>
+                    </span>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="about.html">
+                    <span class="mr-2 text-base">
+                      <i class="fa-regular fa-user"></i>
+                    </span>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="resume.html">
+                    <span class="mr-2 text-base">
+                      <i class="fa-regular fa-file-lines"></i>
+                    </span>
+                    Resume
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two-active" href="portfolio.html">
+                    <span class="mr-2 text-base">
+                      <i class="fas fa-briefcase"></i>
+                    </span>
+                    Works
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="blog.html">
+                    <span class="mr-2 text-base">
+                      <i class="fa-brands fa-blogger"></i>
+                    </span>
+                    Blogs
+                  </a>
+                </li>
+                <li>
+                  <a class="menu-item-two" href="contact.html">
+                    <span class="mr-2 text-base">
+                      <i class="fa-solid fa-address-book"></i>
+                    </span>
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <!-- light and dark mode button -->
+                  <button id="theme-toggle" type="button" class="dark-light-btn w-[44px] h-[44px] ml-2">
+                    <i id="theme-toggle-dark-icon" class="fa-solid text-xl fa-moon hidden"></i>
+                    <i id="theme-toggle-light-icon" class="fa-solid fa-sun text-xl hidden"></i>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- mobile menu start -->
+            <nav id="navbar" class="hidden lg:hidden">
+              <ul class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
+                <li>
+                  <a class="mobile-menu-items" href="homePage.html">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-solid fa-house"></i>
+                    </span>
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="about.html">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-regular fa-user"></i>
+                    </span>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="resume.html">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-regular fa-file-lines"></i>
+                    </span>
+                    Resume
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items-active" href="portfolio.html">
+                    <span class="mr-2 text-xl">
+                      <i class="fas fa-briefcase"></i>
+                    </span>
+                    Works
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="blog.html">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-brands fa-blogger"></i>
+                    </span>
+                    Blogs
+                  </a>
+                </li>
+                <li>
+                  <a class="mobile-menu-items" href="contact.html">
+                    <span class="mr-2 text-xl">
+                      <i class="fa-solid fa-address-book"></i>
+                    </span>
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- mobile menu end -->
+          </header>
+          <!-- header  end -->
+
+          <!-- portfolio page contant start -->
+          <section class="bg-white lg:rounded-2xl dark:bg-[#111111]">
+            <div class="container mb-8 px-4 sm:px-5 md:px-10 lg:px-[60px]">
+              <div class="py-12">
+                <h2 class="after-effect after:left-48 mt-12 lg:mt-0">Portfolio</h2>
+
+                <!-- fillter group buttons -->
+                <ul class="button-group isotop-menu-wrapper mt-[30px] flex w-full justify-start md:justify-end flex-wrap font-medium">
+                  <li class="fillter-btn mr-4 md:mx-4 is-checked" data-filter="*">All</li>
+                  <li class="fillter-btn mr-4 md:mx-4" data-filter=".dev">Web Design</li>
+                  <li class="fillter-btn mr-4 md:mx-4" data-filter=".plugin">App Design</li>
+                  <li class="fillter-btn mr-4 md:mx-4" data-filter=".branding">Web Development</li>
+                  <li class="fillter-btn mr-4 md:mx-4" data-filter=".custom">Wordpress Development</li>
+                </ul>
+              </div>
+              <!-- End py-12 -->
+
+              <div id="isotop-gallery-wrapper" class="mymix portfolio_list-two three-col">
+                <div class="grid-sizer"></div>
+                <!-- portfolio items one start -->
+                <div class="portfolio_list-two-items isotop-item dev">
+                  <div class="rounded-lg bg-[#fff0f0] p-6 dark:bg-transparent dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloOne" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/1.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX-Web Design</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloOne" rel="modal:open"> Digital Tenun Nusantara </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item one  -->
+                <div id="portfiloOne" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">UI/UX Final Research</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Figma</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">Digital Tenun Nusantara</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/ZD4omYlqJtVmxhcqFCQkhC/%5BHi-Fi%5D-End-user?page-id=1001%3A8644&type=design&node-id=1001-8706&viewport=621%2C709%2C0.03&t=KSnqTLAydlI4Rei1-1&scaling=min-zoom&starting-point-node-id=1001%3A8706&mode=design"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi] End-user</a
+                            >
+                          </span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/CxPBdeXNtqymQ8DSeUUQH7/%5BHi-Fi%5D-Admin-Page?page-id=1309%3A24168&type=design&node-id=1309-24244&viewport=90%2C185%2C0.02&scaling=scale-down&starting-point-node-id=1309%3A24244&mode=design&t=O9oHhG1o762M9yCU-1"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi] Admin</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                      Conducting research using the design thinking method, where my team and I conducted interviews with stakeholders of the Digital Tenun Nusantara to understand what they need. In addition, we also conducted interviews
+                      with potential users to find out what the problem is and what they need. Based on the data obtained, we brainstormed to determine the ideas that would be developed into an efficient visual design.
+                    </p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/1.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items two start -->
+                <div class="portfolio_list-two-items isotop-item branding">
+                  <div class="rounded-lg bg-[#fff3fc] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloTwo" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/2.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Web Development</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloTwo" rel="modal:open">Digital Tenun Nusantara</a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item two  -->
+                <div id="portfiloTwo" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">Web Development</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Vue Js, Tailwind CSS, API</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">Digital Tenun Nusantara</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a>Is still local and not hosted</a>
+                          </span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/ZD4omYlqJtVmxhcqFCQkhC/%5BHi-Fi%5D-End-user?page-id=1001%3A8644&type=design&node-id=1001-8706&viewport=621%2C709%2C0.03&t=KSnqTLAydlI4Rei1-1&scaling=min-zoom&starting-point-node-id=1001%3A8706&mode=design"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi] End-user</a
+                            >
+                          </span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/CxPBdeXNtqymQ8DSeUUQH7/%5BHi-Fi%5D-Admin-Page?page-id=1309%3A24168&type=design&node-id=1309-24244&viewport=90%2C185%2C0.02&scaling=scale-down&starting-point-node-id=1309%3A24244&mode=design&t=O9oHhG1o762M9yCU-1"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi] Admin</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                      As a Frontend Developer, I have responsibilities that include developing responsive and visually appealing web pages using Vue.js framework, integrating RESTful APIs and managing data flow between the frontend and
+                      backend systems, keeping up-to-date with the latest trends and best practices in frontend development and Vue.js ecosystem
+                    </p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/2.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items three start -->
+                <div class="portfolio_list-two-items isotop-item custom">
+                  <div class="rounded-lg bg-[#fff3fc] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloThree" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/3.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Wordpress Development</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloThree" rel="modal:open"> Changemakr Asia </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item three start -->
+                <div id="portfiloThree" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">WordPress Development</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Wordpress, Elementor</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">Changemakr Asia</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a href="https://changemakr.asia/" target="_blank" rel="noopener noreferrer">changemakr.asia</a>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                      Redesigned the Changemakr Asia website which was developed using WordPress. In the process of improving its interface, I used the Elementor plugin. The redesign of the Changemakr Asia website involved enhancing its
+                      user experience by implementing custom functionalities and optimizing the site's performance through efficient coding practices.
+                    </p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/3.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items four start -->
+                <div class="portfolio_list-two-items isotop-item branding">
+                  <div class="rounded-lg p-6 bg-[#e9faff] dark:bg-transparent dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloFour" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/4.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Web Development</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloFour" rel="modal:open">Changemakr Asia </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item four start -->
+                <div id="portfiloFour" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">Web Development</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Laravel, Boostrap</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">Changemakr Asia</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a href="https://changemakrimpact.asia/" target="_blank" rel="noopener noreferrer">changemakrimpact.asia</a>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                      Responsible for transforming the designs I had previously created into functional and visually appealing interfaces, utilized the Laravel framework for seamless integration with the backend and leveraged the Bootstrap
+                      CSS framework to ensure a responsive and user-friendly experience across different devices
+                    </p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/4.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- modal start for item five start -->
+                <div class="portfolio_list-two-items isotop-item dev">
+                  <div class="rounded-lg bg-[#fffae9] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloFive" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/5.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX-Web Design</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloFive" rel="modal:open"> Changemakr Asia</a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item five start -->
+                <div id="portfiloFive" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">UI/UX</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Figma</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">Changemakr Asia</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/HGLDM8KjvFJKUcVCdpb8Ws/ChangeMakr-Asia?page-id=464%3A1735&type=design&node-id=984-7499&viewport=1421%2C658%2C0.14&t=iQARPhSPH2y6UnbF-1&scaling=min-zoom&starting-point-node-id=984%3A7499&mode=design"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi] End-user</a
+                            >
+                          </span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/HGLDM8KjvFJKUcVCdpb8Ws/ChangeMakr-Asia?page-id=464%3A1734&type=design&node-id=464-1736&viewport=932%2C968%2C0.22&t=lnzMDdG0y7Ugxmfy-1&scaling=min-zoom&starting-point-node-id=464%3A1736&mode=design"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi] Admin</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                      Brainstorm within the team to discuss and validate the requirements to be developed. Next, create a web-based design view based on the validated requirements using Figma. After creating the webbased design view using
+                      Figma, collaborate with developers and stakeholders to gather feedback and iterate on the design, ensuring that it aligns with the project goals and user needs.
+                    </p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/5.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items Six start -->
+                <div class="portfolio_list-two-items isotop-item custom">
+                  <div class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloSix" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/6.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">Wordpress Development</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloSix" rel="modal:open"> DECART Project </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item six start -->
+                <div id="portfiloSix" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">Wordpress Development</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">WordPress, Elementor</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">Envato</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a href="https://hub.imt-atlantique.fr/decart/" target="_blank" rel="noopener noreferrer">hub.imt-atlantique.fr/decart</a>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                      Developed Decart's website using WordPress and Elementor plugins based on Decart's needs. Implemented custom functionalities and optimized the website's performance by integrating various WordPress plugins and
+                      conducting thorough testing to ensure seamless user experience.
+                    </p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/6.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- modal start for item Seven start -->
+                <div class="portfolio_list-two-items isotop-item dev">
+                  <div class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloSeven" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/7.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX-Web Design</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloSeven" rel="modal:open"> SYNRGY BCA | Binar Academy </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Seven start -->
+                <div id="portfiloSeven" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">UI/UX Project</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Figma, Miro</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">SYNRGY BCA | Binar Academy</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a href="https://uxfol.io/p/tambunanferdinand1/037207be" target="_blank" rel="noopener noreferrer">Mini Project Website</a>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                      Participated in Bootcamp for 3 months and worked on several given project, where the UI/UX Designer team works with the Full Stack Web team to create a website. During the Bootcamp, I collaborated closely with the Full
+                      Stack Web team, contributing to the design and development of engaging and user-friendly websites.
+                    </p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/7.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items Eight start -->
+                <div class="portfolio_list-two-items isotop-item plugin">
+                  <div class="rounded-lg bg-[#f4f4ff] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloEight" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/8.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX-App Design</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloEight" rel="modal:open"> Binar Academy </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Eight start -->
+                <div id="portfiloEight" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">UI/UX Project</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Figma</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">Binar Academy</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/WWHsEtKIi3rBXhXukV3OYW/Hi-fi-Testing?page-id=0%3A1&type=design&node-id=1-2697&viewport=657%2C535%2C0.07&t=aomB7z3Ytqogemu5-1&scaling=min-zoom&starting-point-node-id=1%3A2697&mode=design"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi] End-User</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">
+                      Participated in the Independent Campus program for approximately one year at Binar Academy. The roles I participated in were UI/UX Design and Research. In our final project, we were assigned to create an on-demand
+                      application.
+                    </p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/8.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items Nine start -->
+                <div class="portfolio_list-two-items isotop-item plugin">
+                  <div class="rounded-lg bg-[#fff0f8] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloNine" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/9.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX-App Design</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloNine" rel="modal:open"> Challenge Design </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Nine start -->
+                <div id="portfiloNine" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">UI/UX</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Mobile Application</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Figma</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">Binar Academy</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/nlYo8ovQ9wRA0AZisynTlI/Challenge-Chapter-4?page-id=0%3A1&type=design&node-id=5-508&viewport=-1258%2C364%2C0.3&t=E2V104x2NvRTWtwA-1&scaling=min-zoom&starting-point-node-id=5%3A508&mode=design"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi] End-user</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">This was a design challenge given by a mentor during the independent campus program at Binar Academy. I was assigned to create a simple app.</p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/9." alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items Ten start -->
+                <div class="portfolio_list-two-items isotop-item plugin">
+                  <div class="rounded-lg bg-[#fff3fc] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloTen" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/10.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX-App Design</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloTen" rel="modal:open">Onboarding Page</a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Ten  -->
+                <div id="portfiloTen" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">UI/UX-App Design</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Application Mobile</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Figma</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">-</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/542cm4zCTvQNWaxCaMlULb/Onboarding?page-id=2%3A96&type=design&node-id=2-799&viewport=612%2C795%2C0.9&t=mtFPfyVGWT6Rf6rZ-1&scaling=min-zoom&starting-point-node-id=2%3A799&mode=design"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi]</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">This is a mobile app design that I'm working on to improve my skills.</p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/10.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items Eleven start -->
+                <div class="portfolio_list-two-items isotop-item dev">
+                  <div class="rounded-lg bg-[#fff3fc] dark:bg-transparent p-6 dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloEleven" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/11.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX-Web Design</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloEleven" rel="modal:open"> Zomato Dashboard </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Eleven start -->
+                <div id="portfiloEleven" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">UI/UX-Web Design</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Website</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Figma</span>
+                        </p>
+                      </div>
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">-</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a
+                              href="https://www.figma.com/proto/O3K0CFSyspLYl6kq9xsVT8/Zomato-Admin-Dashboard?page-id=0%3A1&type=design&node-id=2-3&viewport=-3012%2C331%2C0.84&t=qPBd7WzvLS0eJJ4D-1&scaling=min-zoom&mode=design"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >[Hi-Fi]</a
+                            >
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">This is a web design that I'm working on to improve my skills.</p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/11.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+
+                <!-- portfolio items one Twelve -->
+                <div class="portfolio_list-two-items isotop-item plugin">
+                  <div class="rounded-lg bg-[#fff0f0] p-6 dark:bg-transparent dark:border-[2px] border-[#212425]">
+                    <div class="overflow-hidden rounded-lg">
+                      <a href="#portfiloTwelve" rel="modal:open">
+                        <img class="w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110 rounded-lg h-auto" src="images/work_images/12.png" alt="portfolio image" />
+                      </a>
+                    </div>
+                    <span class="pt-5 text-[14px] font-normal text-gray-lite block dark:text-[#A6A6A6]">UI/UX-App Design</span>
+                    <h2 class="font-medium cursor-pointer text-xl duration-300 transition hover:text-[#FA5252] dark:hover:text-[#FA5252] dark:text-white mt-2">
+                      <a href="#portfiloTwelve" rel="modal:open"> Nike Shop </a>
+                    </h2>
+                  </div>
+                </div>
+
+                <!-- modal start for item Twelve  -->
+                <div id="portfiloTwelve" class="modal-container modal">
+                  <div class="overflow-y-scroll scroll-hide-1700 max-h-[60vh] lg:max-h-[80vh] dark:scrollbarDark scrollbarLight">
+                    <h2 class="text-[#ef4060] dark:hover:text-[#FA5252] text-4xl text-center font-bold">UI/UX-App Design</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 my-6 pr-3">
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-file-lines sm:text-lg hidden sm:block mr-4 md:text-xl"></i>
+                          Project :&nbsp;
+                          <span class="font-medium"> Application Mobile</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-code text-lg mr-2 hidden sm:block"></i>
+                          Langages :&nbsp;
+                          <span class="font-medium">Figma</span>
+                        </p>
+                      </div>
+
+                      <div class="space-y-2">
+                        <p class="dark:text-white flex items-center mt-2 lg:mt-0 text-[15px] sm:text-sm">
+                          <i class="fa-regular fa-user text-lg mr-2 hidden sm:block"></i>
+                          Client :&nbsp; <span class="font-medium">-</span>
+                        </p>
+                        <p class="dark:text-white flex items-center text-[15px] sm:text-sm">
+                          <i class="fa-solid fa-arrow-up-right-from-square text-lg mr-2 hidden sm:block"></i>
+                          Preview :&nbsp;
+                          <span class="font-medium transition-all duration-300 ease-in-out hover:text-[#ef4060]">
+                            <a href="https://www.figma.com/file/ww8FYmOXlIDze3Ezldr7rk/Nike-Shop?type=design&node-id=0%3A1&mode=design&t=oZcnSBQixYbglanz-1" target="_blank" rel="noopener noreferrer">[Hi-Fi]</a>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+
+                    <p class="dark:text-white text-2line font-normal text-[15px] sm:text-sm">This is a app mobile design that I'm working on to improve my skills.</p>
+                    <div class="pr-3">
+                      <img class="w-full md:h-[450px] h-auto object-cover rounded-xl mt-6" src="images/work_images/12.png" alt="portfolio image" />
+                    </div>
+                  </div>
+                  <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- footer start -->
+            <footer class="overflow-hidden rounded-b-2xl bg-[#f8fbfb] dark:bg-[#212425]">
+              <p class="text-center py-6 text-gray-lite dark:text-color-910">
+                © 2023 All Rights Reserved by
+                <a class="hover:text-[#FA5252] duration-300 transition" href="https://www.linkedin.com/in/ferdinand-p-j-tambunan-255899199/" target="_blank" rel="noopener noreferrer">Ferdinand Tambunan</a>.
+              </p>
+            </footer>
+            <!-- footer ends -->
+          </section>
+          <!-- portfolio ends  -->
+        </div>
+      </div>
+    </div>
+
+    <!--=== js ===-->
+    <script src="js/vendor/jquary.min.js"></script>
+    <script src="js/vendor/jquery.modal.min.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <!--=== main js  ===-->
+    <script src="js/main.js"></script>
+  </body>
+
+  <!-- Mirrored from bostamihtml.ibthemespro.com/portfiloTwo.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jun 2023 12:52:12 GMT -->
+</html>
